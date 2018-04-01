@@ -1,9 +1,9 @@
 class Sextant < Formula
   desc ""
   homepage ""
-  url "https://github.com/khoiracle/sextant/releases/download/1.0.0/sextant_1.0.0_darwin_amd64.tar.gz"
-  version "1.0.0"
-  sha256 "305df7de0a5d4e612ad46526ed074f623cbfe850a625f6730013d670280198fc"
+  url "https://github.com/khoiracle/sextant/releases/download/1.1.0/sextant_1.1.0_darwin_amd64.tar.gz"
+  version "1.1.0"
+  sha256 "f1c99a3b1602d7091a7d42d1d74b8c8cdbe773f880c1990cf25277fcfa82922d"
 
   def install
     bin.install "sextant"

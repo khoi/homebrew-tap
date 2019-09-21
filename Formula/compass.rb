@@ -2,16 +2,16 @@
 class Compass < Formula
   desc ""
   homepage ""
-  version "3"
+  version "5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/khoi/compass/releases/download/3/compass_3_darwin_amd64.tar.gz"
-    sha256 "feb5dd88fca24fc7f914df8025fab22e4538471882f4618266b453ad18527afe"
+    url "https://github.com/khoi/compass/releases/download/5/compass_5_darwin_amd64.tar.gz"
+    sha256 "1692cdd400584e92f19ee8abce29931e755cc7e485876453a54961f17e08d727"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/khoi/compass/releases/download/3/compass_3_linux_amd64.tar.gz"
-      sha256 "3574aab62574c2f0174f1ae8142ec85bcb1334b6681c43c92f516b1ac0d1fcd7"
+      url "https://github.com/khoi/compass/releases/download/5/compass_5_linux_amd64.tar.gz"
+      sha256 "98a9336a0755fe75c2e5c522b798e6b20fb9fee35aed38d5fbf1139418766963"
     end
   end
 

@@ -2,9 +2,18 @@
 class Compass < Formula
   desc ""
   homepage ""
-  url "https://github.com/khoi/compass/releases/download/2.1/compass_2.1_darwin_amd64.tar.gz"
-  version "2.1"
-  sha256 "21aaec9fdaf00c2bd7124bc98d3c71c28346d72b0253f14da334a95dce190924"
+  version "3"
+  bottle :unneeded
+
+  if OS.mac?
+    url "https://github.com/khoi/compass/releases/download/3/compass_3_darwin_amd64.tar.gz"
+    sha256 "feb5dd88fca24fc7f914df8025fab22e4538471882f4618266b453ad18527afe"
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/khoi/compass/releases/download/3/compass_3_linux_amd64.tar.gz"
+      sha256 "3574aab62574c2f0174f1ae8142ec85bcb1334b6681c43c92f516b1ac0d1fcd7"
+    end
+  end
 
   def install
     bin.install "compass"
